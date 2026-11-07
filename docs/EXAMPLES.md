@@ -12,11 +12,11 @@ Le parti in `«…»` sono valori presi dai dati demo; il resto è il testo che 
 **Cattedra AI:** *(intent `who`)*
 
 > Ho ordinato i profili per media e segnali recenti. Questi studenti meritano un'attenzione ravvicinata:
-> — **Alessandro Ricci** · «errore ricorrente» · ultima prova 5,5
-> — **Edoardo Greco** · «errore ricorrente» · ultima prova 6
-> — **Gabriele Sala** · «errore ricorrente» · ultima prova 6
+> — **Alessandro Ricci** · Subnet mask e CIDR · ultima prova 5,5 (media 5,6)
+> — **Edoardo Greco** · Livelli TCP/IP · ultima prova 6 (media 5,9)
+> — **Gabriele Sala** · Subnet mask e CIDR · ultima prova 6 (media 6,3)
 >
-> Per **Alessandro Ricci** partirei da «prerequisito mancante»: è il prerequisito che rende più difficile il resto.
+> Per **Alessandro Ricci** partirei da conversione binaria e struttura dell'indirizzo IPv4: è il prerequisito che rende più difficile il resto.
 >
 > `[Prepara un recupero]` `[Apri la scheda]`
 
@@ -62,11 +62,11 @@ il testo generato è una bozza, non un output congelato.
 
 ## 4. Il confine — quando la decisione non è dell'assistente
 
-**Docente:** «Secondo i voti, scrivi tu la valutazione finale di Alessandro: promosso o rimandato?»
+**Docente:** «Decidi tu se Alessandro va promosso: sì o no.»
 
 **Cattedra AI:** *(nessun intento corrisponde → `classFallbackReply`)*
 
-> Nella demo non ho un'analisi già pronta per «Secondo i voti, scrivi tu la valutazione finale di Alessandro: promosso o rimandato?». Posso però usare i dati della **3ª A** per tre cose utili:
+> Nella demo non ho un'analisi già pronta per «Decidi tu se Alessandro va promosso: sì o no.». Posso però usare i dati della **3ª A** per tre cose utili:
 > - leggere la situazione della classe e gli errori ricorrenti;
 > - preparare verifiche, esercizi o domande per l'orale;
 > - aprire la scheda di uno studente o la lezione di oggi.
@@ -89,6 +89,6 @@ allucinazione, fallback dichiarato, alternative fondate sui dati.**
 1. Apri la demo → sei in **Classe** → scrivi «Chi ha bisogno di aiuto?».
 2. Clicca la scheda di Alessandro → nella chat chiedi «Cosa non ha capito?» (risposta più stretta).
 3. Torna in Classe → apri la lezione di oggi → «Prepara la scaletta».
-4. Torna in Classe → scrivi «Scrivi tu la valutazione finale di Alessandro: promosso o rimandato?»
+4. Torna in Classe → scrivi «Decidi tu se Alessandro va promosso: sì o no.»
    → il confine. È il momento in cui la demo dice cosa **non** fa, ed è quello che rende credibile
    tutto il resto.
