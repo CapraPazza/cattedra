@@ -48,7 +48,7 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: var(--font-sans);
-  font-size: 14px;
+  font-size: 20.5px;
   line-height: 1.5;
   color: var(--ink);
   background:
@@ -164,7 +164,7 @@ p {
   background: var(--green);
   color: var(--cream);
   border-radius: 8px;
-  font-size: 12px;
+  font-size: 17.5px;
   font-weight: 600;
   text-decoration: none;
   transform: translateY(-160%);
@@ -207,7 +207,7 @@ p {
   background: var(--green);
   color: var(--cream);
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 35px;
   font-weight: 600;
   line-height: 1;
   box-shadow:
@@ -223,14 +223,14 @@ p {
 
 .brand-name {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 29px;
   font-weight: 600;
   letter-spacing: -0.015em;
 }
 
 .brand-sub {
   margin-top: 3px;
-  font-size: 8.5px;
+  font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -244,7 +244,7 @@ p {
   border-radius: 4px;
   background: var(--clay-soft);
   color: var(--clay);
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -297,7 +297,7 @@ p {
   padding: 0 23px 0 0;
   border: 0;
   background: transparent;
-  font-size: 12.5px;
+  font-size: 18px;
   font-weight: 600;
   cursor: pointer;
   outline: none;
@@ -332,7 +332,7 @@ p {
   border-radius: 9px;
   background: transparent;
   color: var(--ink-2);
-  font-size: 12px;
+  font-size: 17.5px;
   font-weight: 600;
   transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
 }
@@ -373,7 +373,7 @@ p {
   border: 1px solid rgba(31, 77, 58, 0.12);
   background: var(--green-soft);
   color: var(--green);
-  font-size: 10px;
+  font-size: 14.5px;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
@@ -415,13 +415,13 @@ p {
 }
 
 .user-meta strong {
-  font-size: 11.5px;
+  font-size: 16.5px;
   font-weight: 700;
 }
 
 .user-meta span {
   margin-top: 2px;
-  font-size: 9.5px;
+  font-size: 14px;
   color: var(--muted);
 }
 
@@ -499,7 +499,7 @@ p {
 
 .eyebrow {
   margin: 0 0 5px;
-  font-size: 8.5px;
+  font-size: 12.5px;
   font-weight: 700;
   letter-spacing: 0.115em;
   text-transform: uppercase;
@@ -515,7 +515,7 @@ p {
 .rail-title-row h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -532,7 +532,7 @@ p {
   border-radius: 6px;
   background: var(--surface-soft);
   color: var(--ink-2);
-  font-size: 9.5px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -545,7 +545,7 @@ p {
   padding: 11px 15px 13px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.45;
 }
 
@@ -559,7 +559,7 @@ p {
 .rail-context {
   margin: 0 16px 9px;
   color: var(--muted);
-  font-size: 9.5px;
+  font-size: 14px;
   line-height: 1.4;
 }
 
@@ -599,7 +599,7 @@ p {
   border: 0;
   background: transparent;
   outline: none;
-  font-size: 11.5px;
+  font-size: 16.5px;
 }
 
 .search-box input::placeholder {
@@ -644,7 +644,7 @@ p {
 .student-row .avatar {
   width: 31px;
   height: 31px;
-  font-size: 9.5px;
+  font-size: 14px;
 }
 
 .student-row-main {
@@ -658,7 +658,7 @@ p {
 .student-row-name {
   overflow: hidden;
   color: var(--ink);
-  font-size: 12px;
+  font-size: 17.5px;
   font-weight: 600;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -667,7 +667,7 @@ p {
 .student-row-meta {
   overflow: hidden;
   color: var(--faint);
-  font-size: 9.4px;
+  font-size: 13.5px;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -700,7 +700,7 @@ p {
   border-radius: 50%;
   background: var(--surface);
   color: var(--ink);
-  font-size: 8.8px;
+  font-size: 13px;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
@@ -726,14 +726,14 @@ p {
   width: 62px;
   height: 62px;
   font-family: var(--font-display);
-  font-size: 21px;
+  font-size: 30.5px;
   font-weight: 600;
 }
 
 .list-empty {
   padding: 18px 12px;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 14.5px;
   line-height: 1.5;
   text-align: center;
 }
@@ -760,7 +760,7 @@ p {
   display: block;
   margin-bottom: 1px;
   color: var(--muted);
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -768,7 +768,7 @@ p {
 
 .pulse-metric strong {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 29px;
   font-weight: 600;
   line-height: 1;
 }
@@ -805,7 +805,7 @@ p {
   gap: 6px;
   margin-top: 5px;
   color: var(--faint);
-  font-size: 7.5px;
+  font-size: 11px;
 }
 
 .pulse-legend span {
@@ -856,7 +856,7 @@ p {
   border-radius: 5px;
   background: transparent;
   color: var(--green);
-  font-size: 9.5px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -883,7 +883,7 @@ p {
 .lesson-group-label {
   padding: 9px 8px 4px;
   color: var(--muted);
-  font-size: 7.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -921,7 +921,7 @@ p {
   border-radius: 7px;
   background: var(--surface-soft);
   color: var(--ink-2);
-  font-size: 8.5px;
+  font-size: 12.5px;
   font-weight: 700;
 }
 
@@ -942,7 +942,7 @@ p {
 .lesson-row-title {
   overflow: hidden;
   color: var(--ink);
-  font-size: 10.8px;
+  font-size: 15.5px;
   font-weight: 600;
   line-height: 1.35;
   white-space: nowrap;
@@ -955,7 +955,7 @@ p {
   gap: 4px;
   overflow: hidden;
   color: var(--faint);
-  font-size: 8.3px;
+  font-size: 12px;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -1057,7 +1057,7 @@ p {
 
 .quick-title {
   color: var(--ink);
-  font-size: 10.2px;
+  font-size: 15px;
   font-weight: 650;
   line-height: 1.25;
 }
@@ -1065,14 +1065,14 @@ p {
 .quick-sub {
   margin-top: 1px;
   color: var(--faint);
-  font-size: 8.2px;
+  font-size: 12px;
 }
 
 .quick-note {
   margin: 0;
   padding: 0 13px 11px;
   color: var(--faint);
-  font-size: 8px;
+  font-size: 11.5px;
   line-height: 1.45;
 }
 
@@ -1118,7 +1118,7 @@ p {
 .chat-head-text h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 23px;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: -0.01em;
@@ -1128,7 +1128,7 @@ p {
   margin: 2px 0 0;
   overflow: hidden;
   color: var(--muted);
-  font-size: 9.2px;
+  font-size: 13.5px;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -1212,7 +1212,7 @@ p {
   gap: 6px;
   margin-bottom: 3px;
   color: var(--green-2);
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -1220,7 +1220,7 @@ p {
 
 .msg-author span {
   color: var(--faint);
-  font-size: 7.5px;
+  font-size: 11px;
   font-weight: 500;
   letter-spacing: 0;
   text-transform: none;
@@ -1228,7 +1228,7 @@ p {
 
 .msg-content {
   color: var(--ink-2);
-  font-size: 12.1px;
+  font-size: 17.5px;
   line-height: 1.55;
 }
 
@@ -1297,7 +1297,7 @@ p {
   border-radius: 4px;
   background: var(--green-soft);
   color: var(--green);
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 700;
 }
 
@@ -1307,7 +1307,7 @@ p {
   border-radius: 14px 14px 4px 14px;
   background: var(--green);
   color: #f9f5e8;
-  font-size: 11.8px;
+  font-size: 17px;
   line-height: 1.5;
   box-shadow: 0 7px 20px -15px rgba(31, 77, 58, 0.8);
 }
@@ -1356,7 +1356,7 @@ p {
 
 .chat-stat span {
   color: var(--muted);
-  font-size: 7px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -1364,7 +1364,7 @@ p {
 
 .chat-stat strong {
   font-family: var(--font-display);
-  font-size: 15px;
+  font-size: 22px;
   line-height: 1.1;
 }
 
@@ -1394,7 +1394,7 @@ p {
 .chat-student .avatar {
   width: 26px;
   height: 26px;
-  font-size: 8px;
+  font-size: 11.5px;
 }
 
 .chat-student-main {
@@ -1405,7 +1405,7 @@ p {
 .chat-student-name {
   display: block;
   color: var(--ink);
-  font-size: 10px;
+  font-size: 14.5px;
   font-weight: 650;
 }
 
@@ -1413,7 +1413,7 @@ p {
   display: block;
   overflow: hidden;
   color: var(--muted);
-  font-size: 8.2px;
+  font-size: 12px;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -1424,7 +1424,7 @@ p {
   border-radius: 5px;
   background: var(--clay-soft);
   color: var(--clay);
-  font-size: 8.5px;
+  font-size: 12.5px;
   font-weight: 700;
 }
 
@@ -1449,19 +1449,19 @@ p {
 }
 
 .chat-error-head strong {
-  font-size: 10px;
+  font-size: 14.5px;
 }
 
 .chat-error-meta {
   color: var(--clay);
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 600;
 }
 
 .chat-error p {
   margin: 2px 0 0;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.45;
 }
 
@@ -1481,7 +1481,7 @@ p {
   border-radius: 6px;
   background: var(--surface);
   color: var(--ink-2);
-  font-size: 8.5px;
+  font-size: 12.5px;
   font-weight: 600;
   transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
 }
@@ -1513,7 +1513,7 @@ p {
   border-radius: 99px;
   background: var(--green-softer);
   color: var(--green);
-  font-size: 8.8px;
+  font-size: 13px;
   font-weight: 600;
   transition: background 0.16s ease, color 0.16s ease, border-color 0.16s ease;
 }
@@ -1543,7 +1543,7 @@ p {
 .starter-label {
   margin: 0 0 6px;
   color: var(--muted);
-  font-size: 7.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1616,14 +1616,14 @@ p {
 .starter-title {
   padding-right: 11px;
   color: var(--ink);
-  font-size: 9.5px;
+  font-size: 14px;
   font-weight: 650;
   line-height: 1.25;
 }
 
 .starter-sub {
   color: var(--muted);
-  font-size: 8px;
+  font-size: 11.5px;
   line-height: 1.4;
 }
 
@@ -1652,7 +1652,7 @@ p {
   background: var(--green);
   color: var(--cream);
   font-family: var(--font-display);
-  font-size: 13px;
+  font-size: 19px;
   font-weight: 600;
   position: relative;
 }
@@ -1684,14 +1684,14 @@ p {
 
 .map-node strong {
   display: block;
-  font-size: 9px;
+  font-size: 13px;
 }
 
 .map-node span {
   display: block;
   margin-top: 1px;
   color: var(--muted);
-  font-size: 8px;
+  font-size: 11.5px;
   line-height: 1.35;
 }
 
@@ -1710,13 +1710,13 @@ p {
 }
 
 .skill-item span {
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 600;
 }
 
 .skill-item strong {
   color: var(--ink-2);
-  font-size: 8.5px;
+  font-size: 12.5px;
 }
 
 .skill-meter {
@@ -1753,7 +1753,7 @@ p {
   border-radius: 3px;
   background: var(--green-soft);
   color: var(--green);
-  font-size: 7px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -1770,13 +1770,13 @@ p {
 }
 
 .exercise strong {
-  font-size: 9.5px;
+  font-size: 14px;
 }
 
 .exercise p {
   margin: 2px 0 0;
   color: var(--ink-2);
-  font-size: 9px;
+  font-size: 13px;
 }
 
 details.solution {
@@ -1786,7 +1786,7 @@ details.solution {
 details.solution summary {
   width: max-content;
   color: var(--green-2);
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 600;
   list-style: none;
   cursor: pointer;
@@ -1799,7 +1799,7 @@ details.solution summary::-webkit-details-marker {
 details.solution p {
   padding-top: 4px;
   color: var(--muted);
-  font-size: 8.5px;
+  font-size: 12.5px;
 }
 
 .analogy-list {
@@ -1818,13 +1818,13 @@ details.solution p {
 
 .analogy strong {
   display: block;
-  font-size: 9.5px;
+  font-size: 14px;
 }
 
 .analogy p {
   margin: 2px 0 0;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 13px;
 }
 
 .typing {
@@ -1854,7 +1854,7 @@ details.solution p {
 .typing-text {
   margin-left: 4px;
   color: var(--faint);
-  font-size: 8px;
+  font-size: 11.5px;
 }
 
 /* Composer */
@@ -1906,7 +1906,7 @@ details.solution p {
   outline: none;
   resize: none;
   color: var(--ink);
-  font-size: 11.5px;
+  font-size: 16.5px;
   line-height: 1.45;
 }
 
@@ -1946,7 +1946,7 @@ details.solution p {
 .composer-note {
   margin: 4px 0 0;
   color: var(--faint);
-  font-size: 7.8px;
+  font-size: 11.5px;
   text-align: center;
 }
 
@@ -1967,7 +1967,7 @@ details.solution p {
   border-radius: 4px;
   background: var(--surface-soft);
   color: var(--ink-2);
-  font-size: 8px;
+  font-size: 11.5px;
 }
 
 .attachment > span {
@@ -2025,7 +2025,7 @@ details.solution p {
   width: 53px;
   height: 53px;
   border-radius: 15px;
-  font-size: 16px;
+  font-size: 23px;
 }
 
 .student-id {
@@ -2050,7 +2050,7 @@ details.solution p {
   border-radius: 5px;
   background: var(--surface-soft);
   color: var(--ink-2);
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 650;
 }
 
@@ -2060,7 +2060,7 @@ details.solution p {
   gap: 3px;
   padding: 2px 6px;
   border-radius: 5px;
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 650;
 }
 
@@ -2085,7 +2085,7 @@ details.solution p {
 .student-id h1 {
   margin: 0 0 2px;
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 40.5px;
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: -0.028em;
@@ -2094,7 +2094,7 @@ details.solution p {
 .student-id > p {
   margin: 0;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 13px;
 }
 
 .student-actions {
@@ -2112,7 +2112,7 @@ details.solution p {
   padding: 7px 10px;
   border: 1px solid transparent;
   border-radius: 8px;
-  font-size: 10px;
+  font-size: 14.5px;
   font-weight: 600;
   white-space: nowrap;
   transition: background 0.16s ease, border-color 0.16s ease, color 0.16s ease, transform 0.16s ease;
@@ -2166,7 +2166,7 @@ details.solution p {
 .btn-compact {
   padding: 5px 8px;
   border-radius: 7px;
-  font-size: 9px;
+  font-size: 13px;
 }
 
 .btn-compact .icon {
@@ -2199,7 +2199,7 @@ details.solution p {
 
 .figure-label {
   color: var(--muted);
-  font-size: 7.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -2209,7 +2209,7 @@ details.solution p {
   display: inline-block;
   margin-top: 1px;
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 23px;
   line-height: 1.1;
 }
 
@@ -2225,7 +2225,7 @@ details.solution p {
   display: block;
   margin-top: 1px;
   color: var(--faint);
-  font-size: 7.5px;
+  font-size: 11px;
 }
 
 .figure {
@@ -2243,7 +2243,7 @@ details.solution p {
 
 .figure span {
   color: var(--muted);
-  font-size: 7.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -2251,14 +2251,14 @@ details.solution p {
 
 .figure strong {
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 23px;
   font-weight: 600;
   line-height: 1.1;
 }
 
 .figure small {
   color: var(--faint);
-  font-size: 7.5px;
+  font-size: 11px;
 }
 
 .insight-card {
@@ -2300,7 +2300,7 @@ details.solution p {
 .insight-body p {
   margin: 0;
   color: var(--ink-2);
-  font-size: 10.2px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -2326,7 +2326,7 @@ details.solution p {
 .card-head h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.015em;
@@ -2339,7 +2339,7 @@ details.solution p {
 .card-head-meta {
   margin-top: 2px;
   color: var(--faint);
-  font-size: 8px;
+  font-size: 11.5px;
 }
 
 .doc-list {
@@ -2420,7 +2420,7 @@ details.solution p {
   display: block;
   overflow: hidden;
   color: var(--ink);
-  font-size: 10px;
+  font-size: 14.5px;
   font-weight: 600;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -2430,7 +2430,7 @@ details.solution p {
   display: block;
   margin-top: 1px;
   color: var(--faint);
-  font-size: 8px;
+  font-size: 11.5px;
 }
 
 .doc-score {
@@ -2440,7 +2440,7 @@ details.solution p {
   border-radius: 5px;
   background: var(--surface-soft);
   color: var(--ink-2);
-  font-size: 8.5px;
+  font-size: 12.5px;
   font-weight: 700;
 }
 
@@ -2499,7 +2499,7 @@ details.solution p {
   align-items: center;
   gap: 5px;
   color: var(--ink);
-  font-size: 10px;
+  font-size: 14.5px;
   font-weight: 650;
 }
 
@@ -2508,21 +2508,21 @@ details.solution p {
   border-radius: 3px;
   background: var(--clay-soft);
   color: var(--clay);
-  font-size: 7px;
+  font-size: 11px;
   font-weight: 700;
 }
 
 .error-note {
   margin: 2px 0 0;
   color: var(--muted);
-  font-size: 8.8px;
+  font-size: 13px;
   line-height: 1.45;
 }
 
 .error-source {
   margin-top: 1px;
   color: var(--faint);
-  font-size: 7.5px;
+  font-size: 11px;
 }
 
 .strengths {
@@ -2541,7 +2541,7 @@ details.solution p {
   border-radius: 99px;
   background: var(--green-softer);
   color: var(--green-2);
-  font-size: 8px;
+  font-size: 11.5px;
 }
 
 .strength .icon {
@@ -2556,7 +2556,7 @@ details.solution p {
   border-top: 1px solid var(--line);
   background: var(--surface-soft);
   color: var(--ink-2);
-  font-size: 8.8px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -2572,7 +2572,7 @@ details.solution p {
   display: block;
   margin-bottom: 1px;
   color: var(--muted);
-  font-size: 7.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -2615,7 +2615,7 @@ details.solution p {
   gap: 6px;
   margin-bottom: 4px;
   color: var(--muted);
-  font-size: 8.5px;
+  font-size: 12.5px;
   font-weight: 500;
 }
 
@@ -2628,7 +2628,7 @@ details.solution p {
   border-radius: 4px;
   background: var(--green-soft);
   color: var(--green);
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -2642,7 +2642,7 @@ details.solution p {
   background: transparent;
   outline: none;
   font-family: var(--font-display);
-  font-size: 29px;
+  font-size: 42px;
   font-weight: 600;
   line-height: 1.12;
   letter-spacing: -0.03em;
@@ -2679,7 +2679,7 @@ details.solution p {
   border-radius: 5px;
   background: var(--surface-soft);
   color: var(--muted);
-  font-size: 8px;
+  font-size: 11.5px;
 }
 
 .meta-chip .icon {
@@ -2693,7 +2693,7 @@ details.solution p {
   gap: 3px;
   margin-left: 1px;
   color: var(--green-2);
-  font-size: 7.5px;
+  font-size: 11px;
   transition: color 0.2s ease;
 }
 
@@ -2726,7 +2726,7 @@ details.solution p {
   border-radius: 6px;
   background: var(--surface);
   color: var(--ink-2);
-  font-size: 8.5px;
+  font-size: 12.5px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -2749,7 +2749,7 @@ details.solution p {
 .brief-head h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.015em;
@@ -2764,7 +2764,7 @@ details.solution p {
   align-items: center;
   gap: 4px;
   color: var(--green);
-  font-size: 7.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -2786,7 +2786,7 @@ details.solution p {
   outline: none;
   resize: vertical;
   color: var(--ink-2);
-  font-size: 10.3px;
+  font-size: 15px;
   line-height: 1.5;
   transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
@@ -2820,7 +2820,7 @@ details.solution p {
 .toolbar-label {
   margin-right: 2px;
   color: var(--muted);
-  font-size: 7.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -2835,7 +2835,7 @@ details.solution p {
   border-radius: 99px;
   background: rgba(255, 253, 247, 0.66);
   color: var(--ink-2);
-  font-size: 8.2px;
+  font-size: 12px;
   font-weight: 600;
   transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
 }
@@ -2888,7 +2888,7 @@ details.solution p {
 .plan-head h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.015em;
@@ -2901,7 +2901,7 @@ details.solution p {
 .plan-hint {
   margin: 2px 0 0;
   color: var(--faint);
-  font-size: 7.8px;
+  font-size: 11.5px;
 }
 
 .plan-head-actions {
@@ -2916,7 +2916,7 @@ details.solution p {
   border-radius: 4px;
   background: var(--surface-soft);
   color: var(--muted);
-  font-size: 7.5px;
+  font-size: 11px;
   font-weight: 600;
   white-space: nowrap;
 }
@@ -2956,7 +2956,7 @@ details.solution p {
 
 .empty-state h3 {
   margin: 0;
-  font-size: 10.5px;
+  font-size: 15px;
   font-weight: 650;
 }
 
@@ -2964,7 +2964,7 @@ details.solution p {
   max-width: 280px;
   margin: 0;
   color: var(--muted);
-  font-size: 8.8px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -3011,7 +3011,7 @@ details.solution p {
   border-radius: 50%;
   background: var(--green-soft);
   color: var(--green);
-  font-size: 8.5px;
+  font-size: 12.5px;
   font-weight: 700;
 }
 
@@ -3021,7 +3021,7 @@ details.solution p {
   border-radius: 4px;
   outline: none;
   color: var(--ink);
-  font-size: 10.2px;
+  font-size: 15px;
   font-weight: 650;
   line-height: 1.4;
 }
@@ -3032,7 +3032,7 @@ details.solution p {
   border-radius: 4px;
   outline: none;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 13px;
   line-height: 1.45;
 }
 
@@ -3054,7 +3054,7 @@ details.solution p {
   align-self: start;
   padding-top: 1px;
   color: var(--muted);
-  font-size: 8px;
+  font-size: 11.5px;
 }
 
 .step-duration input {
@@ -3064,7 +3064,7 @@ details.solution p {
   border-radius: 4px;
   background: transparent;
   color: var(--ink-2);
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 600;
   text-align: right;
   outline: none;
@@ -3088,12 +3088,12 @@ details.solution p {
   padding-top: 8px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 8px;
+  font-size: 11.5px;
 }
 
 .outline-total strong {
   color: var(--ink-2);
-  font-size: 8.5px;
+  font-size: 12.5px;
 }
 
 .outline-total.is-over strong {
@@ -3139,7 +3139,7 @@ details.solution p {
 
 .slide-thumb-kicker {
   margin-bottom: 2px;
-  font-size: 5.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -3150,7 +3150,7 @@ details.solution p {
   display: -webkit-box;
   overflow: hidden;
   font-family: var(--font-display);
-  font-size: 12.5px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.08;
   letter-spacing: -0.02em;
@@ -3177,7 +3177,7 @@ details.solution p {
   right: 7px;
   bottom: 5px;
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 600;
   line-height: 1;
   opacity: 0.16;
@@ -3190,7 +3190,7 @@ details.solution p {
   min-height: 12px;
   margin-top: 3px;
   color: var(--muted);
-  font-size: 7.2px;
+  font-size: 11px;
 }
 
 .slide-thumb-foot .icon {
@@ -3242,7 +3242,7 @@ details.solution p {
   border-radius: 7px;
   background: var(--amber-soft);
   color: #6e4c14;
-  font-size: 8px;
+  font-size: 11.5px;
 }
 
 .caption-bar .icon {
@@ -3330,7 +3330,7 @@ details.solution p {
 .material-name {
   display: block;
   color: var(--ink);
-  font-size: 9px;
+  font-size: 13px;
   font-weight: 650;
   line-height: 1.35;
 }
@@ -3339,7 +3339,7 @@ details.solution p {
   display: block;
   margin-top: 1px;
   color: var(--muted);
-  font-size: 7.5px;
+  font-size: 11px;
   line-height: 1.4;
 }
 
@@ -3426,7 +3426,7 @@ details.solution p {
 .dialog-head h2 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -3471,7 +3471,7 @@ details.solution p {
 
 .slide-brandline {
   margin-bottom: 8px;
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -3567,7 +3567,7 @@ details.solution p {
   flex: none;
   padding-top: 1px;
   color: var(--muted);
-  font-size: 7.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -3576,7 +3576,7 @@ details.solution p {
 .slide-caption p {
   margin: 0;
   color: var(--ink-2);
-  font-size: 9.5px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -3637,7 +3637,7 @@ details.solution p {
   border-radius: 10px;
   background: var(--surface-soft);
   color: var(--ink-2);
-  font-size: 10.5px;
+  font-size: 15px;
   line-height: 1.55;
 }
 
@@ -3654,7 +3654,7 @@ details.solution p {
   padding-top: 8px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 9.5px;
+  font-size: 14px;
   font-style: italic;
 }
 
@@ -3669,14 +3669,14 @@ details.solution p {
   background: var(--surface);
   color: var(--ink);
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: 35px;
   font-weight: 600;
 }
 
 .detail-score small {
   color: var(--muted);
   font-family: var(--font-sans);
-  font-size: 8px;
+  font-size: 11.5px;
   font-weight: 500;
 }
 
@@ -3706,7 +3706,7 @@ details.solution p {
   background: var(--ink);
   color: #faf6ea;
   box-shadow: 0 14px 32px -18px rgba(0, 0, 0, 0.55);
-  font-size: 10px;
+  font-size: 14.5px;
   line-height: 1.4;
   pointer-events: auto;
   animation: toast-in 0.25s var(--ease-out) both;
@@ -3733,7 +3733,7 @@ details.solution p {
   border-radius: 8px;
   background: var(--clay-soft);
   color: var(--clay);
-  font-size: 12px;
+  font-size: 17.5px;
 }
 
 /* ---------- Animations ---------- */
@@ -3842,7 +3842,7 @@ details.solution p {
   }
 
   .brand-name {
-    font-size: 19px;
+    font-size: 27.5px;
   }
 
   .tab-btn {
@@ -4046,7 +4046,7 @@ details.solution p {
   }
 
   .student-id h1 {
-    font-size: 25px;
+    font-size: 36.5px;
   }
 
   .student-top {
@@ -4211,11 +4211,11 @@ details.solution p {
   .brand-mark {
     width: 35px;
     height: 35px;
-    font-size: 22px;
+    font-size: 32px;
   }
 
   .brand-name {
-    font-size: 19px;
+    font-size: 27.5px;
   }
 
   .class-switcher {
@@ -4234,7 +4234,7 @@ details.solution p {
 
   .tab-btn {
     padding: 8px 9px;
-    font-size: 11.5px;
+    font-size: 16.5px;
   }
 
   .student-figures {
@@ -4276,7 +4276,7 @@ details.solution p {
   }
 
   .lesson-title-input {
-    font-size: 25px;
+    font-size: 36.5px;
   }
 
   .brief-actions {
@@ -4310,7 +4310,7 @@ details.solution p {
   }
 
   .tab-btn {
-    font-size: 10.5px;
+    font-size: 15px;
     padding: 7px 6px;
   }
 
@@ -4341,7 +4341,7 @@ details.solution p {
   }
 
   .msg-content {
-    font-size: 11.5px;
+    font-size: 16.5px;
   }
 
   .msg-main {
@@ -4368,13 +4368,13 @@ details.solution p {
   }
 
   .student-id h1 {
-    font-size: 23px;
+    font-size: 33.5px;
   }
 
   .avatar--xl {
     width: 46px;
     height: 46px;
-    font-size: 14px;
+    font-size: 20.5px;
   }
 
   .student-actions {
@@ -4386,7 +4386,7 @@ details.solution p {
     min-width: 0;
     padding-left: 6px;
     padding-right: 6px;
-    font-size: 9px;
+    font-size: 13px;
   }
 
   .student-figures .figure {
@@ -4399,7 +4399,7 @@ details.solution p {
   }
 
   .doc-title {
-    font-size: 9.5px;
+    font-size: 14px;
   }
 
   .lesson-editor-head,
@@ -4408,7 +4408,7 @@ details.solution p {
   }
 
   .lesson-title-input {
-    font-size: 23px;
+    font-size: 33.5px;
   }
 
   .status-select-wrap {
@@ -4457,7 +4457,7 @@ details.solution p {
   }
 
   .slide-stage .slide-ord-big {
-    font-size: 54px;
+    font-size: 78.5px;
   }
 
   .toast-region {
