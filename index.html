@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cattedra — Assistente didattico</title>
+  <meta name="description" content="Cattedra: uno spazio di lavoro didattico con AI per gestire classi, studenti e lezioni. Prototipo con dati simulati." />
+  <meta name="theme-color" content="#1F4D3A" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-sparkles" viewBox="0 0 24 24">
+      <path d="M12 3.2 13.8 8.2 18.8 10 13.8 11.8 12 16.8 10.2 11.8 5.2 10 10.2 8.2Z"/>
+      <path d="M18.5 14.8 19.4 17.2 21.8 18.1 19.4 19 18.5 21.4 17.6 19 15.2 18.1 17.6 17.2Z"/>
+    </symbol>
+    <symbol id="i-users" viewBox="0 0 24 24">
+      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+      <circle cx="9" cy="7" r="4"/>
+      <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </symbol>
+    <symbol id="i-user" viewBox="0 0 24 24">
+      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+      <circle cx="12" cy="7" r="4"/>
+    </symbol>
+    <symbol id="i-message" viewBox="0 0 24 24">
+      <path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </symbol>
+    <symbol id="i-book" viewBox="0 0 24 24">
+      <path d="M2 4.5A2.5 2.5 0 0 1 4.5 2H20v20H4.5A2.5 2.5 0 0 1 2 19.5z"/>
+      <path d="M6 2v20"/>
+    </symbol>
+    <symbol id="i-book-open" viewBox="0 0 24 24">
+      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+    </symbol>
+    <symbol id="i-school" viewBox="0 0 24 24">
+      <path d="M3 21h18M5 21V8l7-5 7 5v13"/>
+      <path d="M9 21v-6h6v6"/>
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="7"/>
+      <path d="m21 21-4.3-4.3"/>
+    </symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24">
+      <path d="M12 5v14M5 12h14"/>
+    </symbol>
+    <symbol id="i-paperclip" viewBox="0 0 24 24">
+      <path d="m21.4 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+    </symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24">
+      <path d="M12 19V5"/>
+      <path d="m5 12 7-7 7 7"/>
+    </symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24">
+      <path d="M5 12h14"/>
+      <path d="m12 5 7 7-7 7"/>
+    </symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24">
+      <path d="M19 12H5"/>
+      <path d="m12 19-7-7 7-7"/>
+    </symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6"/>
+    </symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24">
+      <path d="m9 18 6-6-6-6"/>
+    </symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24">
+      <path d="m15 18-6-6 6-6"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="m5 12 4 4L19 6"/>
+    </symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="18" rx="2"/>
+      <path d="M16 2v4M8 2v4M3 10h18"/>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M12 7v5l3 2"/>
+    </symbol>
+    <symbol id="i-file" viewBox="0 0 24 24">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+      <path d="M14 2v6h6"/>
+      <path d="M8 13h8M8 17h6"/>
+    </symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24">
+      <rect x="8" y="2" width="8" height="4" rx="1"/>
+      <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+      <path d="M8 12h8M8 16h5"/>
+    </symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24">
+      <path d="M22 10 12 5 2 10l10 5 10-5z"/>
+      <path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/>
+    </symbol>
+    <symbol id="i-download" viewBox="0 0 24 24">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+      <path d="m7 10 5 5 5-5"/>
+      <path d="M12 15V3"/>
+    </symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24">
+      <rect x="9" y="9" width="13" height="13" rx="2"/>
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+    </symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24">
+      <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+      <path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4Z"/>
+    </symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24">
+      <path d="M21 12a9 9 0 1 1-2.64-6.36"/>
+      <path d="M21 3v6h-6"/>
+    </symbol>
+    <symbol id="i-presentation" viewBox="0 0 24 24">
+      <path d="M2 3h20"/>
+      <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/>
+      <path d="m7 21 5-5 5 5"/>
+    </symbol>
+    <symbol id="i-list" viewBox="0 0 24 24">
+      <path d="M8 6h13M8 12h13M8 18h13"/>
+      <path d="M3 6h.01M3 12h.01M3 18h.01"/>
+    </symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24">
+      <path d="m12 2 9 5-9 5-9-5z"/>
+      <path d="m3 12 9 5 9-5"/>
+      <path d="m3 17 9 5 9-5"/>
+    </symbol>
+    <symbol id="i-subtitles" viewBox="0 0 24 24">
+      <rect x="2" y="5" width="20" height="14" rx="2"/>
+      <path d="M6 12h4M14 12h4M6 16h7"/>
+    </symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24">
+      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+    </symbol>
+    <symbol id="i-lightbulb" viewBox="0 0 24 24">
+      <path d="M9 18h6"/>
+      <path d="M10 22h4"/>
+      <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A6 6 0 1 0 7 7a6 6 0 0 0 1.5 4.5c.76.76 1.23 1.52 1.41 2.5"/>
+    </symbol>
+    <symbol id="i-target" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"/>
+      <circle cx="12" cy="12" r="5"/>
+      <circle cx="12" cy="12" r="1"/>
+    </symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24">
+      <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+      <path d="M12 9v4M12 17h.01"/>
+    </symbol>
+    <symbol id="i-trending-up" viewBox="0 0 24 24">
+      <path d="m22 7-8.5 8.5-5-5L2 17"/>
+      <path d="M16 7h6v6"/>
+    </symbol>
+    <symbol id="i-trending-down" viewBox="0 0 24 24">
+      <path d="m22 17-8.5-8.5-5 5L2 7"/>
+      <path d="M16 17h6v-6"/>
+    </symbol>
+    <symbol id="i-x" viewBox="0 0 24 24">
+      <path d="M18 6 6 18M6 6l12 12"/>
+    </symbol>
+    <symbol id="i-database" viewBox="0 0 24 24">
+      <ellipse cx="12" cy="5" rx="9" ry="3"/>
+      <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/>
+      <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/>
+    </symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24">
+      <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v5c0 1.25.75 2 2 2h3c0 4-1 5-4 6z"/>
+      <path d="M14 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v5c0 1.25.75 2 2 2h3c0 4-1 5-4 6z"/>
+    </symbol>
+    <symbol id="i-eye-off" viewBox="0 0 24 24">
+      <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/>
+      <path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/>
+      <path d="M6.61 6.61A13.53 13.53 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/>
+      <path d="m2 2 20 20"/>
+    </symbol>
+    <symbol id="i-play" viewBox="0 0 24 24">
+      <path d="m7 4 13 8-13 8z"/>
+    </symbol>
+    <symbol id="i-network" viewBox="0 0 24 24">
+      <rect x="16" y="16" width="6" height="6" rx="1"/>
+      <rect x="2" y="16" width="6" height="6" rx="1"/>
+      <rect x="9" y="2" width="6" height="6" rx="1"/>
+      <path d="M5 16v-3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3M12 8v8"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Salta al contenuto</a>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand" aria-label="Cattedra, assistente didattico">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span class="brand-copy">
+          <span class="brand-name">Cattedra</span>
+          <span class="brand-sub">Assistente didattico</span>
+        </span>
+        <span class="demo-badge">Demo</span>
+      </div>
+
+      <div class="class-switcher">
+        <span class="class-switcher-icon" aria-hidden="true">
+          <svg class="icon"><use href="#i-school"></use></svg>
+        </span>
+        <div class="class-select-wrap">
+          <label for="class-select" class="sr-only">Scegli classe</label>
+          <select id="class-select" aria-label="Scegli classe"></select>
+          <svg class="icon select-chevron" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+        </div>
+      </div>
+
+      <nav class="main-tabs" role="tablist" aria-label="Viste dell'app">
+        <button type="button" class="tab-btn" role="tab" id="tab-classe" aria-controls="panel-classe" aria-selected="true" data-tab="classe">
+          <svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg>
+          <span>Classe</span>
+        </button>
+        <button type="button" class="tab-btn" role="tab" id="tab-studente" aria-controls="panel-studente" aria-selected="false" tabindex="-1" data-tab="studente">
+          <svg class="icon" aria-hidden="true"><use href="#i-user"></use></svg>
+          <span>Studente</span>
+        </button>
+        <button type="button" class="tab-btn" role="tab" id="tab-lezione" aria-controls="panel-lezione" aria-selected="false" tabindex="-1" data-tab="lezione">
+          <svg class="icon" aria-hidden="true"><use href="#i-book-open"></use></svg>
+          <span>Lezione</span>
+        </button>
+      </nav>
+
+      <div class="user-chip" aria-label="Profilo della docente Elena Ferrari">
+        <span class="avatar avatar--user" aria-hidden="true">EF</span>
+        <span class="user-meta">
+          <strong>Elena Ferrari</strong>
+          <span>Docente · Informatica</span>
+        </span>
+      </div>
+    </header>
+
+    <main id="main" class="main" tabindex="-1">
+      <section class="tab-panel layout-classe" id="panel-classe" role="tabpanel" aria-labelledby="tab-classe" tabindex="-1">
+        <h1 class="sr-only" id="classe-heading">Classe</h1>
+
+        <aside class="panel student-rail" aria-label="Studenti della classe">
+          <div class="rail-head">
+            <p class="eyebrow"><span data-current-class>Classe</span> · Registro</p>
+            <div class="rail-title-row">
+              <h2>Studenti</h2>
+              <span class="count-badge" id="class-students-count">—</span>
+            </div>
+          </div>
+
+          <div class="class-pulse" id="class-pulse" aria-label="Sintesi della classe"></div>
+
+          <div class="search-box">
+            <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+            <label for="class-search" class="sr-only">Cerca studente nella classe</label>
+            <input type="search" id="class-search" placeholder="Cerca studente" autocomplete="off" />
+          </div>
+
+          <ul class="student-list" id="class-student-list" aria-label="Elenco studenti della classe"></ul>
+
+          <p class="rail-note">
+            <svg class="icon" aria-hidden="true"><use href="#i-user"></use></svg>
+            Apri una scheda per leggere voti, materiali e punti deboli.
+          </p>
+        </aside>
+
+        <section class="panel chat-panel" id="class-chat-panel" aria-label="Chat con l'assistente di classe"></section>
+
+        <aside class="right-rail" aria-label="Lezioni e strumenti rapidi">
+          <section class="panel lessons-card">
+            <div class="rail-head rail-head--row">
+              <div>
+                <p class="eyebrow">Pianificazione</p>
+                <div class="rail-title-row">
+                  <h2>Lezioni</h2>
+                  <span class="count-badge" id="class-lessons-count">—</span>
+                </div>
+              </div>
+              <button type="button" class="ghost-link" data-go-tab="lezione">
+                <span>Apri</span>
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"></use></svg>
+              </button>
+            </div>
+            <div class="lesson-list" id="class-lessons-list"></div>
+          </section>
+
+          <section class="panel quick-card">
+            <div class="rail-head">
+              <p class="eyebrow">Con l'AI</p>
+              <div class="rail-title-row">
+                <h2>Strumenti rapidi</h2>
+              </div>
+            </div>
+            <div class="quick-grid">
+              <button type="button" class="quick-btn" data-quick="questions">
+                <span class="quick-icon quick-icon--sage" aria-hidden="true"><svg class="icon"><use href="#i-message"></use></svg></span>
+                <span class="quick-title">Domande probabili</span>
+                <span class="quick-sub">Per l'orale</span>
+              </button>
+              <button type="button" class="quick-btn" data-quick="exercises">
+                <span class="quick-icon quick-icon--amber" aria-hidden="true"><svg class="icon"><use href="#i-sparkles"></use></svg></span>
+                <span class="quick-title">Crea esercizi</span>
+                <span class="quick-sub">Tre livelli</span>
+              </button>
+              <button type="button" class="quick-btn" data-quick="concept">
+                <span class="quick-icon quick-icon--sky" aria-hidden="true"><svg class="icon"><use href="#i-network"></use></svg></span>
+                <span class="quick-title">Schemi concettuali</span>
+                <span class="quick-sub">Mappa visiva</span>
+              </button>
+              <button type="button" class="quick-btn" data-quick="skills">
+                <span class="quick-icon quick-icon--clay" aria-hidden="true"><svg class="icon"><use href="#i-target"></use></svg></span>
+                <span class="quick-title">Skills</span>
+                <span class="quick-sub">Competenze</span>
+              </button>
+            </div>
+            <p class="quick-note">Usano il contesto della classe e della lezione di oggi.</p>
+          </section>
+        </aside>
+      </section>
+
+      <section class="tab-panel layout-studente" id="panel-studente" role="tabpanel" aria-labelledby="tab-studente" tabindex="-1" hidden>
+        <h1 class="sr-only" id="studente-heading">Studente</h1>
+
+        <aside class="panel student-rail student-rail--compact" aria-label="Scegli uno studente">
+          <div class="rail-head">
+            <p class="eyebrow"><span data-current-class>Classe</span> · Scheda studente</p>
+            <div class="rail-title-row">
+              <h2>Studenti</h2>
+              <span class="count-badge" id="student-students-count">—</span>
+            </div>
+          </div>
+
+          <p class="rail-context" id="student-rail-context"></p>
+
+          <div class="search-box">
+            <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+            <label for="student-search" class="sr-only">Cerca studente</label>
+            <input type="search" id="student-search" placeholder="Cerca studente" autocomplete="off" />
+          </div>
+
+          <ul class="student-list" id="student-student-list" aria-label="Elenco studenti"></ul>
+
+          <p class="rail-note">
+            <svg class="icon" aria-hidden="true"><use href="#i-sparkles"></use></svg>
+            L'assistente legge la scheda selezionata, non l'intera classe.
+          </p>
+        </aside>
+
+        <section class="student-main" id="student-dossier" aria-label="Scheda dello studente"></section>
+
+        <section class="panel chat-panel" id="student-chat-panel" aria-label="Chat con l'assistente studente"></section>
+      </section>
+
+      <section class="tab-panel layout-lezione" id="panel-lezione" role="tabpanel" aria-labelledby="tab-lezione" tabindex="-1" hidden>
+        <h1 class="sr-only" id="lezione-heading">Lezione</h1>
+
+        <aside class="panel lesson-rail" aria-label="Lezioni della classe">
+          <div class="rail-head rail-head--row">
+            <div>
+              <p class="eyebrow">Pianificazione</p>
+              <div class="rail-title-row">
+                <h2>Lezioni</h2>
+                <span class="count-badge" id="lesson-count">—</span>
+              </div>
+            </div>
+            <button type="button" class="btn btn-secondary btn-compact" id="new-lesson-btn">
+              <svg class="icon" aria-hidden="true"><use href="#i-plus"></use></svg>
+              Nuova
+            </button>
+          </div>
+
+          <p class="rail-context" id="lesson-rail-context"></p>
+
+          <div class="lesson-list lesson-list--rail" id="lesson-list"></div>
+
+          <p class="rail-note">
+            <svg class="icon" aria-hidden="true"><use href="#i-eye-off"></use></svg>
+            Qui lavori solo sul contenuto: gli studenti restano fuori dalla vista.
+          </p>
+        </aside>
+
+        <section class="lesson-workspace" id="lesson-workspace" aria-label="Pianificazione della lezione"></section>
+
+        <section class="panel chat-panel" id="lesson-chat-panel" aria-label="Chat con l'assistente di lezione"></section>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="app-dialog" class="app-dialog"></dialog>
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="false"></div>
+  <p id="sr-status" class="sr-only" aria-live="polite"></p>
+
+  <noscript>
+    <p class="noscript">Cattedra è un prototipo interattivo: attiva JavaScript per esplorare le tre viste.</p>
+  </noscript>
+
+  <script src="app.js"></script>
+</body>
+</html>
